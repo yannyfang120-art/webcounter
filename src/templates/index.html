@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="fi">
 <head>
   <meta charset="UTF-8">
   <title>Laskuri</title>
@@ -7,15 +7,18 @@
 <body>
   <h2>Ohtulaskuri</h2>
   <div>nappia painettu {{ value }} kertaa</div>
+
   <form action="/increment" method="POST">
-    <button type="submit">
-      Paina
-    </button>
+    <button type="submit">Paina</button>
   </form>
+
   <form action="/reset" method="POST">
-    <button type="submit">
-      Nollaa
-    </button>
+    <button type="submit">Nollaa</button>
+  </form>
+
+  <form action="/set" method="POST">
+    <input type="text" name="value">
+    <button type="submit">Aseta</button>
   </form>
 </body>
 </html>
